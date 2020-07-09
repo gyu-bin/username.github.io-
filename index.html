@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" type="image/x-icon"
+  href="3333.jpg">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="progressbar"></div>
+<div id="scrollpath"></div>
+
+  <section>
+  <h2>
+  </h2>
+
+  <body>
+    <h1>Worship team</h1>
+    <style>
+    h1{
+      color:white;
+      text-decoration: none;
+      font-size: 50px;
+    }
+    </style>
+    <ul><li date-text="Anointing"><a href="anointing.html">Anointing</a></li></ul>
+    <ul><li date-text="Markers"><a href="markers.html">Markers</a></li></ul>
+    <ul><li date-text="Welove"><a href="welove.html">Welove</a></li></ul>
+    <ul><li date-text="J-US"><a href="j-us.html">J-US</a></li></ul>
+    <ul><li date-text="Part"><a href="part.html">Part</a></li></ul>
+
+    <p>
+    [사진을 누르면 음악이 나옵니다]<br>
+    ※여기서만...ㅠㅠㅠ
+  </p>
+    <center>
+    <audio id="audio" src="감사로.mp3"></audio>
+    <img id="img" src="efe.jpg" width=700 height=500 class="shake-slow shake-
+    constant">
+    </center>
+    <script>
+    document.getElementById("img").addEventListener("click", function(){
+        document.getElementById("audio").play();
+    });
+    </script>
+
+    <style>
+    p{
+    text-align: center;
+    }
+    </style>
+    <style>
+      img{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+      }
+      </style>
+
+    </section>
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight-window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totalHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+    </script>
+
+      </body>
+      </html>
